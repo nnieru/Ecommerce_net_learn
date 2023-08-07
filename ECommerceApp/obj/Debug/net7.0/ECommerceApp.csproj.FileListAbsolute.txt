@@ -264,3 +264,12 @@
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EntityFrameworkCore.CommonTools.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/Jil.Core.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/Sigil.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/ECommerceAp.Utility.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EcommerceApp.DataAccess.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EXommerceApp.Models.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/ECommerceAp.Utility.pdb
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EcommerceApp.DataAccess.pdb
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EXommerceApp.Models.pdb

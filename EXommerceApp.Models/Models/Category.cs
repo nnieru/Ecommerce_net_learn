@@ -1,11 +1,9 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
-
-
-namespace ECommerceApp.Models;
-
 using System.ComponentModel.DataAnnotations;
-    
+
+namespace EXommerceApp.Models.Models;
+
 [Table("Category")]
 public class Category
 {

@@ -1,0 +1,12 @@
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/bin/Debug/net7.0/EXommerceApp.Models.deps.json
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/bin/Debug/net7.0/EXommerceApp.Models.dll
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/bin/Debug/net7.0/EXommerceApp.Models.pdb
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.csproj.AssemblyReference.cache
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.AssemblyInfoInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.AssemblyInfo.cs
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.csproj.CoreCompileInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.dll
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/refint/EXommerceApp.Models.dll
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/EXommerceApp.Models.pdb
+/Users/nathaniel/Projects/ECommerceApp/EXommerceApp.Models/obj/Debug/net7.0/ref/EXommerceApp.Models.dll

@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ECommerceApp.Data;
-using ECommerceApp.Models;
+using EXommerceApp.Models.Models;
+using EcommerceApp.DataAccess.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceApp.Controllers

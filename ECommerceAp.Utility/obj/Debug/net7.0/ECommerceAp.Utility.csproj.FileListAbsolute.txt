@@ -1,0 +1,12 @@
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/bin/Debug/net7.0/ECommerceAp.Utility.deps.json
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/bin/Debug/net7.0/ECommerceAp.Utility.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/bin/Debug/net7.0/ECommerceAp.Utility.pdb
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.csproj.AssemblyReference.cache
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.AssemblyInfoInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.AssemblyInfo.cs
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.csproj.CoreCompileInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/refint/ECommerceAp.Utility.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ECommerceAp.Utility.pdb
+/Users/nathaniel/Projects/ECommerceApp/ECommerceAp.Utility/obj/Debug/net7.0/ref/ECommerceAp.Utility.dll

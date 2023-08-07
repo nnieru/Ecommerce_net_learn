@@ -1,0 +1,17 @@
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.csproj.AssemblyReference.cache
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.AssemblyInfoInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.AssemblyInfo.cs
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.csproj.CoreCompileInputs.cache
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EcommerceApp.DataAccess.deps.json
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EcommerceApp.DataAccess.runtimeconfig.json
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EcommerceApp.DataAccess.dll
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EcommerceApp.DataAccess.pdb
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EXommerceApp.Models.dll
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/bin/Debug/net7.0/EXommerceApp.Models.pdb
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.csproj.CopyComplete
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.dll
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/refint/EcommerceApp.DataAccess.dll
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.pdb
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/EcommerceApp.DataAccess.genruntimeconfig.cache
+/Users/nathaniel/Projects/ECommerceApp/EcommerceApp.DataAccess/obj/Debug/net7.0/ref/EcommerceApp.DataAccess.dll
