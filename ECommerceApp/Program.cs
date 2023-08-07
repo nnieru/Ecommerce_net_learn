@@ -1,4 +1,7 @@
 ﻿using EcommerceApp.DataAccess.Data;
+using EcommerceApp.DataAccess.Repository;
+using EcommerceApp.DataAccess.Repository.IRepository;
+using EXommerceApp.Models.Models;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -10,6 +13,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+// add registration for repository
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository >();
 
 var app = builder.Build();
 
