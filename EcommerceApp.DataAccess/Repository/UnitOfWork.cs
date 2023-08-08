@@ -8,11 +8,14 @@ public class UnitOfWork: IUnitOfWork
 
     private readonly ApplicationDbContext _context;
     public ICategoryRepository CategoryRepository { get; private set; }
+    public IProductRepository ProductRepository { get; private set; }
+
 
     public UnitOfWork(ApplicationDbContext dbContext)
     {
         _context = dbContext;
         CategoryRepository = new CategoryRepository(_context);
+        ProductRepository = new ProductRepository(_context);
     }
    
     public void Save()

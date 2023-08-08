@@ -11,6 +11,7 @@
           "ECommerceAp.Utility": "1.0.0",
           "EXommerceApp.Models": "1.0.0",
           "EcommerceApp.DataAccess": "1.0.0",
+          "EntityFrameworkCore.CommonTools": "2.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.6.23329.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.6.23329.4",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0-preview.6.23329.4",

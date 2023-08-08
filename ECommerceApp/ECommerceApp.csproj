@@ -9,6 +9,7 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
+    <PackageReference Include="EntityFrameworkCore.CommonTools" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0-preview.6.23329.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.6.23329.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0-preview.6.23329.4">
@@ -21,9 +22,6 @@
     <ProjectReference Include="..\ECommerceAp.Utility\ECommerceAp.Utility.csproj" />
     <ProjectReference Include="..\EcommerceApp.DataAccess\EcommerceApp.DataAccess.csproj" />
     <ProjectReference Include="..\EXommerceApp.Models\EXommerceApp.Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Areas\Customer\Data\**" />

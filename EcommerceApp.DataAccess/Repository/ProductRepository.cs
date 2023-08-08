@@ -2,20 +2,20 @@ using System.Linq.Expressions;
 using EcommerceApp.DataAccess.Data;
 using EcommerceApp.DataAccess.Repository.IRepository;
 using EXommerceApp.Models.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EcommerceApp.DataAccess.Repository;
 
-public class CategoryRepository: Repository<Category>, ICategoryRepository
+public class ProductRepository: Repository<Product>, IProductRepository
 {
     private readonly ApplicationDbContext _context;
-    public CategoryRepository(ApplicationDbContext dbContext) : base(dbContext)
+    public ProductRepository(ApplicationDbContext dbContext) : base(dbContext)
     {
         _context = dbContext;
     }
 
-    public void Update(Category obj)
+    public void Update(Product product)
     {
-        _context.Categories.Update(obj);
+        _context.Products.Update(product);
     }
-    
 }

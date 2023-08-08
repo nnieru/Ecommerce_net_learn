@@ -1,0 +1,58 @@
+@model List<Product>
+
+<div class="container">
+     <div class="row pt-4 pb-3">
+           <div class="col-6">
+               <h2>Product List</h2>
+           </div>
+            
+           <!--Create new product button-->
+           <div class="col-6 text-end">
+               <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+                   <i class="bi bi-plus-circle"></i> Create New Product
+               </a>
+           </div>
+       </div>
+    
+    
+    <!--table-->
+    <div>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>ISBN</th>
+                <th>List Price</th>
+                <th>Price 1-50</th>
+                <th>Price 50 +</th>
+                <th>Price 100 +</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var prod in Model)
+            {
+                <tr>
+                    <td>@prod.Title</td>
+                    <td>@prod.Author</td>
+                    <td>@prod.Description</td>
+                    <td>@prod.ISBN</td>
+                    <td>@prod.ListPrice</td>
+                    <td>@prod.Price</td>
+                    <td>@prod.Price50</td>
+                    <td>@prod.Price100</td>
+                    <td>
+                        <div class="d-inline-block">
+                            <a asp-controller="Product" asp-action="Edit" class="btn btn-secondary">Edit</a>
+                             <a asp-controller="Product" asp-action="Delete" class="btn btn-danger">Delete</a>
+                            
+                        </div>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

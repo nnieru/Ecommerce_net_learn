@@ -21,7 +21,7 @@ namespace EcommerceApp.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ECommerceApp.Models.Category", b =>
+            modelBuilder.Entity("EXommerceApp.Models.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,11 +34,12 @@ namespace EcommerceApp.DataAccess.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Category");
 
                     b.HasData(
                         new
@@ -58,6 +59,110 @@ namespace EcommerceApp.DataAccess.Migrations
                             Id = 3,
                             DisplayOrder = 3,
                             Name = "History"
+                        });
+                });
+
+            modelBuilder.Entity("EXommerceApp.Models.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ISBN")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("ListPrice")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price100")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Price50")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Author = "Billy Spark",
+                            Description = "Lorem ipsum",
+                            ISBN = "SWD9999001",
+                            ListPrice = 99.0,
+                            Price = 90.0,
+                            Price100 = 80.0,
+                            Price50 = 85.0,
+                            Title = "Fortune Of Time"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Author = "Nancy Hoover",
+                            Description = "Lorem ipsum",
+                            ISBN = "CAW777777701",
+                            ListPrice = 40.0,
+                            Price = 30.0,
+                            Price100 = 20.0,
+                            Price50 = 25.0,
+                            Title = "Dark Skies"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Author = "Abby Muscles",
+                            Description = "Lorem ipsum",
+                            ISBN = "WS333333301",
+                            ListPrice = 70.0,
+                            Price = 65.0,
+                            Price100 = 55.0,
+                            Price50 = 60.0,
+                            Title = "Cotton Candy"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Author = "Billy Spark",
+                            Description = "Lorem ipsum",
+                            ISBN = "SOTJ000001",
+                            ListPrice = 30.0,
+                            Price = 27.0,
+                            Price100 = 20.0,
+                            Price50 = 25.0,
+                            Title = "Fortune Of Time"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Author = "Laura Phantom",
+                            Description = "Lorem ipsum",
+                            ISBN = "FOT000001",
+                            ListPrice = 25.0,
+                            Price = 23.0,
+                            Price100 = 20.0,
+                            Price50 = 22.0,
+                            Title = "Leaves and Worders"
                         });
                 });
 #pragma warning restore 612, 618
