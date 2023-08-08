@@ -18,14 +18,39 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.8" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Test\Controllers\" />
-    <Folder Include="Areas\Test\Data\" />
-    <Folder Include="Areas\Test\Models\" />
-    <Folder Include="Areas\Test\Views\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ECommerceAp.Utility\ECommerceAp.Utility.csproj" />
     <ProjectReference Include="..\EcommerceApp.DataAccess\EcommerceApp.DataAccess.csproj" />
     <ProjectReference Include="..\EXommerceApp.Models\EXommerceApp.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Areas\Customer\Data\**" />
+    <Compile Remove="Areas\Customer\Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Areas\Customer\Data\**" />
+    <EmbeddedResource Remove="Areas\Customer\Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Areas\Customer\Data\**" />
+    <Content Remove="Areas\Customer\Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\Customer\Data\**" />
+    <None Remove="Areas\Customer\Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <AdditionalFiles Include="Areas\Admin\Views\Category\Delete.cshtml" />
+    <AdditionalFiles Include="Areas\Admin\Views\Category\Edit.cshtml" />
+    <AdditionalFiles Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <AdditionalFiles Include="Areas\Customer\Views\Home\Index.cshtml" />
+    <AdditionalFiles Include="Areas\Customer\Views\Home\Privacy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
   </ItemGroup>
 </Project>

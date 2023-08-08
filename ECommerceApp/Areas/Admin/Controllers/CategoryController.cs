@@ -7,22 +7,23 @@ using EcommerceApp.DataAccess.Data;
 using EcommerceApp.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ECommerceApp.Controllers
+namespace ECommerceApp.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _repository;
+        private readonly IUnitOfWork _unitOfWork;
         
         // constructor
-        public CategoryController(ICategoryRepository repository)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _repository = repository;
+            _unitOfWork = unitOfWork;
         }
         
         // Views
         public IActionResult Index()
         {
-            List<Category> objCategoryList = _repository.GetAll().ToList();
+            List<Category> objCategoryList = _unitOfWork.CategoryRepository.GetAll().ToList();
             return View(objCategoryList);
         }
 
@@ -38,7 +39,7 @@ namespace ECommerceApp.Controllers
                 return NotFound();
             }
 
-            var category = _repository.Get(c => c.Id == id);
+            var category = _unitOfWork.CategoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
@@ -49,7 +50,7 @@ namespace ECommerceApp.Controllers
 
         public IActionResult Delete(int? id)
         {
-            var category = _repository.Get(c => c.Id == id);
+            var category = _unitOfWork.CategoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
@@ -76,8 +77,8 @@ namespace ECommerceApp.Controllers
             // if add success the page will redirect to category list page
             if (ModelState.IsValid)
             {
-                _repository.Add(category);
-                _repository.Save();
+                _unitOfWork.CategoryRepository.Add(category);
+                _unitOfWork.Save();
                 TempData["success"] = "Category created successfully!";
                 return RedirectToAction("Index","Category");
             }
@@ -90,8 +91,8 @@ namespace ECommerceApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                _repository.Update(obj);
-               _repository.Save();
+                _unitOfWork.CategoryRepository.Update(obj);
+               _unitOfWork.Save();
                 TempData["success"] = "Category updated successfully!";
                 return RedirectToAction("Index", "Category");
             }
@@ -102,15 +103,15 @@ namespace ECommerceApp.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            Category? category = _repository.Get(c => c.Id == id);
+            Category? category = _unitOfWork.CategoryRepository.Get(c => c.Id == id);
 
             if (category == null)
             {
                 return NotFound();
             }
 
-            _repository.Remove(category);
-            _repository.Save();
+            _unitOfWork.CategoryRepository.Remove(category);
+            _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully!";
             return RedirectToAction("Index");
 
