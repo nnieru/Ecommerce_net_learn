@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -20,7 +21,7 @@ public class Product
     
     
     [Required]
-    [Display(Name = "List Price")]
+    [DisplayName("List Price")]
     [Range(1, 1000)]
     public double ListPrice { get; set; }
     

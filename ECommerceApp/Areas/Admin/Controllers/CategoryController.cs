@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using EXommerceApp.Models.Models;
-using EcommerceApp.DataAccess.Data;
 using EcommerceApp.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 

@@ -45,8 +45,8 @@
                     <td>@prod.Price100</td>
                     <td>
                         <div class="d-inline-block">
-                            <a asp-controller="Product" asp-action="Edit" class="btn btn-secondary">Edit</a>
-                             <a asp-controller="Product" asp-action="Delete" class="btn btn-danger">Delete</a>
+                            <a asp-controller="Product" asp-action="Edit" asp-route-id="@prod.Id" class="btn btn-secondary">Edit</a>
+                             <a asp-controller="Product" asp-action="Delete" asp-route-id="@prod.Id" class="btn btn-danger">Delete</a>
                             
                         </div>
                     </td>
