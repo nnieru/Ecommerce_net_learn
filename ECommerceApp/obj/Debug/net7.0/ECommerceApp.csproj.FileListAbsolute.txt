@@ -273,3 +273,4 @@
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/EntityFrameworkCore.CommonTools.dll
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/Jil.Core.dll
 /Users/nathaniel/Projects/ECommerceApp/ECommerceApp/bin/Debug/net7.0/Sigil.dll
+/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/obj/Debug/net7.0/ECommerceApp.MvcApplicationPartsAssemblyInfo.cs

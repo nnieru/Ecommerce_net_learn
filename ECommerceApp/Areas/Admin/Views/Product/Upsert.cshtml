@@ -1,0 +1,114 @@
+@model ProductViewModel
+
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Products.Id" hidden/>
+    <div class="row">
+        <div class="col-10">
+            <div class="border p-3 mt-3">
+                    <div>
+                        <h2>@(Model.Products.Id != 0 ? "Update" : "Create") Product</h2>
+                    </div>
+            
+                    <div asp-validation-summary="All"></div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Title" class="ms-2"></label>
+                        <input asp-for="Products.Title" type="text" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.Title"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Author" class="ms-2"></label>
+                        <input asp-for="Products.Author" type="text" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.Author"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.ISBN" class="ms-2"></label>
+                        <input asp-for="Products.ISBN" type="text" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.ISBN"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Description" class="ms-2"></label>
+                        <textarea asp-for="Products.Description" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="Products.Description"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.ListPrice" class="ms-2"></label>
+                        <input asp-for="Products.ListPrice" type="number" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.ListPrice"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Price" class="ms-2"></label>
+                        <input asp-for="Products.Price" type="number" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.Price"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Price50" class="ms-2"></label>
+                        <input asp-for="Products.Price50" type="number" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.Price50"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.Price100" class="ms-2"></label>
+                        <input asp-for="Products.Price100" type="number" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.Price100"></span>
+                    </div>
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.CategoryId" class="ms-2"></label>
+                        <select asp-for="Products.CategoryId" class="form-control" asp-items="@Model.CategoryList">
+                            <option disabled selected="">--Select Category--</option>
+                        </select>
+                        <span class="text-danger" asp-validation-for="Products.CategoryId"></span>
+                    </div>
+            
+                    <div class="py-2 col-12">
+                        <label asp-for="Products.ImageUrl" class="ms-2"></label>
+                        <input asp-for="Products.ImageUrl" type="file" name="file" class="form-control"/>
+                        <span class="text-danger" asp-validation-for="Products.ImageUrl"></span>
+                    </div>
+            
+            
+            
+                    <div class="row pt-2">
+                        <div class="col-6 col-md-3 ">
+                            @if (Model.Products.Id != 0)
+                            {
+                                <button type="submit" class="btn btn-primary form-control">Update</button>
+                            }
+                            else
+                            {
+                                <button type="submit" class="btn btn-primary form-control">Create</button>
+                            }
+                        </div>
+            
+                        <div class="col-6 col-md-3">
+                            <a asp-controller="Product" asp-action="Index" class="btn btn-secondary form-control">Back to product list</a>
+                        </div>
+            
+                    </div>
+                </div>
+        </div>
+        <div class="col-2">
+            <img src="@Model.Products.ImageUrl" width="100%" style="border-radius:5px; border: 1px solid #bbb9b9"/>
+        </div>
+    </div>
+    
+</form>
+
+@section Scripts
+{
+    <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'anchor autolink charmap codesample emoticons  link lists media  table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap ',
+        });
+      </script>
+    
+    <partial name="_ValidationScriptsPartial"/>
+}

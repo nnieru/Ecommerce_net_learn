@@ -25,7 +25,7 @@ public class ApplicationDbContext: DbContext
             new Category {Id = 2, Name = "SciFi", DisplayOrder = 2},
             new Category {Id = 3, Name = "History", DisplayOrder = 3}
             );
-
+    
         modelBuilder.Entity<Product>().HasData(
             new Product
             {
@@ -37,7 +37,9 @@ public class ApplicationDbContext: DbContext
                 Price = 90,
                 ListPrice = 99,
                 Price50 = 85,
-                Price100 = 80
+                Price100 = 80,
+                CategoryId = 2,
+                ImageUrl = ""
             },
             new Product
             {
@@ -49,7 +51,9 @@ public class ApplicationDbContext: DbContext
                 Price = 30,
                 ListPrice = 40,
                 Price50 = 25,
-                Price100 = 20
+                Price100 = 20,
+                CategoryId = 2,
+                ImageUrl = ""
             },
             new Product
             {
@@ -61,7 +65,9 @@ public class ApplicationDbContext: DbContext
                 ListPrice = 70,
                 Price = 65,
                 Price50 = 60,
-                Price100 = 55
+                Price100 = 55,
+                CategoryId = 3,
+                ImageUrl = ""
             }, new Product
             {
                 Id = 4,
@@ -72,7 +78,9 @@ public class ApplicationDbContext: DbContext
                 ListPrice = 30,
                 Price = 27,
                 Price50 = 25,
-                Price100 = 20
+                Price100 = 20,
+                CategoryId = 1,
+                ImageUrl = ""
             }, new Product
             {
                 Id = 5,
@@ -83,7 +91,10 @@ public class ApplicationDbContext: DbContext
                 ListPrice = 25,
                 Price = 23,
                 Price50 = 22,
-                Price100 = 20
+                Price100 = 20,
+                CategoryId = 1,
+                ImageUrl = ""
+                
             }
             );
     }

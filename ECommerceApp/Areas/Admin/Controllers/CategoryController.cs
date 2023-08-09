@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceApp.Areas.Admin.Controllers
 {
+    
     [Area("Admin")]
     public class CategoryController : Controller
     {
@@ -30,6 +31,7 @@ namespace ECommerceApp.Areas.Admin.Controllers
 
         public IActionResult Edit(int? id)
         {
+          
             if (id == null || id == 0)
             {
                 return NotFound();

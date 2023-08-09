@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/wwwroot/images/products/579d1210-446e-4845-8ff1-bad0f2affbdd.jpg",
+      "PackagePath": "staticwebassets/images/products/579d1210-446e-4845-8ff1-bad0f2affbdd.jpg"
+    },
+    {
       "Id": "/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VqguXSjp3Kf+PM09yO1qD/hxtwr3I5q6oTT123hq5Vo=",
+  "Hash": "lRsVxR33BzRkUSityhkBuehP915nFSxbaVWtxsPK8rw=",
   "Source": "ECommerceApp",
   "BasePath": "_content/ECommerceApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/wwwroot/images/products/579d1210-446e-4845-8ff1-bad0f2affbdd.jpg",
+      "SourceId": "ECommerceApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/wwwroot/",
+      "BasePath": "_content/ECommerceApp",
+      "RelativePath": "images/products/579d1210-446e-4845-8ff1-bad0f2affbdd.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/579d1210-446e-4845-8ff1-bad0f2affbdd.jpg"
     },
     {
       "Identity": "/Users/nathaniel/Projects/ECommerceApp/ECommerceApp/wwwroot/js/site.js",
